@@ -47,7 +47,7 @@ if (!is_dir($result)) {
     $result = '"'.$result.'"';
     echo 'xcopy /E/S "../architect1" '.$result;
     echo exec('xcopy /E/S "../architect1" '.$result);
-    $deploy_url = "https://fubar2k19.github.io/FUBAR-Final/Template/architect/".$build
+    $deploy_url = "https://fubar2k19.github.io/FUBAR-Final/Template/architect/".$build;
 
 }
 header('Location: ../../object.php?arch='.$deploy_url);
