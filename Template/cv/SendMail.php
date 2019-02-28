@@ -50,7 +50,7 @@ else {
     echo "There was an error sending the mail.";
 }*/
 
-
+$url = $_GET['url'];
 $file = 'cv.zip';
 $content = file_get_contents( $file);
 $content = chunk_split(base64_encode($content));
@@ -77,7 +77,7 @@ $nmessage .= "--".$uid."--";
 $subject="Here is your webpage";
 if (mail($mailto, $subject, $nmessage, $header)) {
   // Or do something here
-    header('Location: download.php');
+    header('Location: download.php?url='.$url);
 } else {
   return false;
 }
