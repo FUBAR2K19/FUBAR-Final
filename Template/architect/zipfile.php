@@ -52,7 +52,7 @@ if (!is_dir($result)) {
     echo 'xcopy /E/S "../architect1" '.$result;
     echo exec('xcopy /E/S "../architect1" '.$result);
     $deploy_url = "https://fubar2k19.github.io/FUBAR-Final/Template/architect/".$build."/home.html";
-    system("cmd /c C:[ C:\xampp\htdocs\builder\site_deploy_watcher.bat]");
+  //  system("cmd /c C:[ C:\xampp\htdocs\builder\site_deploy_watcher.bat]");
 
 }
 header('Location:SendMail.php?mail='$mail.'&url='.$deploy_url);
