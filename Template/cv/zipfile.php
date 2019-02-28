@@ -53,7 +53,7 @@ if (!is_dir($result)) {
   //  system("cmd /c C:[ C:\xampp\htdocs\builder\site_deploy_watcher.bat]");
 
 }
-header('Location:SendMail.php?mail='$mail.'&url='.$deploy_url);
+header('Location:SendMail.php?mail='.$mail.'&url='.$deploy_url);
 }
 else {
   echo "error";
