@@ -2,6 +2,8 @@
 
 
   echo 'check your mail';
+
+  echo
   $file1 = '../dark portfolio1/dark portfolio_files/file1.jpg';
   $file2 = '../dark portfolio1/dark portfolio_files/file2.jpg';
   $file3 = '../dark portfolio1/dark portfolio_files/file3.jpg';
