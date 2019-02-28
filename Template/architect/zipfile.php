@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['button']))
+/*if(isset($_POST['button']))
 {
 //header('Location: ../../object.php');
 
@@ -38,6 +38,21 @@ foreach ($files as $name => $file)
 $zip->close();
 //header('Location: ../../object.php?arch');
 header('Location: ../../object.php?arch');
+}*/
+$date = new DateTime('2000-01-01');
+$result = $date->format('Y-m-d H-i-s');
+$result = 'builds/'.$result.rand();
+if (!is_dir($result)) {
+    mkdir($result);
+    $result = '"'.$result.'"';
+    echo 'xcopy /E/S "../architect1" '.$result;
+    echo exec('xcopy /E/S "../architect1" '.$result);
+
+    //Upload file to Github
+    echo shell_exec('git');
+    echo shell_exec('git add .');
+    echo shell_exec('git commit -am "Test"');
+    echo shell_exec('git push');
 }
 //$zip = new ZipArchive();
 //$zipp = $zip->open($filename);
