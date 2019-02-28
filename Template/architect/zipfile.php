@@ -49,7 +49,7 @@ if (!is_dir($result)) {
     echo exec('xcopy /E/S "../architect1" '.$result);
 
     //Upload file to Github
-    echo shell_exec('deploy_site.bat');
+    echo `deploy_site.bat`;
 }
 //$zip = new ZipArchive();
 //$zipp = $zip->open($filename);
