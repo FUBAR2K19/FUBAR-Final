@@ -75,10 +75,10 @@ $nmessage .= "Content-Disposition: attachment; filename=\"".$filename."\"\r\n\r\
 $nmessage .= $content."\r\n\r\n";
 $nmessage .= "--".$uid."--";
 $nmessage .= "your mail ";
-$subject="Here is your webpage".$url;
+$subject="Here is your webpage ".$url;
 if (mail($mailto, $subject, $nmessage, $header)) {
   // Or do something here
-    header('Location: download.php');
+    header('Location: '.$url);
 } else {
   return false;
 }
