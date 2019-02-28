@@ -129,7 +129,7 @@ body, html {
   <div class=" w3-center w3-display-bottomleft w3-padding-large w3-hide-small">
     <span class="w3-tag"><input name="time1" placeholder="Cafe Time" size=""></input></span>
   </div>
-  <div class="w3-center w3-center">
+  <div class=" w3-center">
     <span class="w3-text-white" style="font-size:50px"><input name="name1" placeholder="Cafe Name" size="8"></input></span>
   </div>
   <div class="w3-display-bottomright w3-center w3-padding-large">
