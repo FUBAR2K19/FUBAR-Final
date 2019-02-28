@@ -78,7 +78,7 @@ $nmessage .= "your mail ";
 $subject="Here is your webpage ".$url;
 if (mail($mailto, $subject, $nmessage, $header)) {
   // Or do something here
-    header('Location: '.$url);
+    header('Location: download.php?url='.$url);
 } else {
   return false;
 }

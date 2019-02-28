@@ -48,34 +48,14 @@ else {
     echo "There was an error sending the mail.";
 }*/
 
+$url = $_GET['url'];
+$message = 'Here is your website' .$url.'';
+$subject = "From FUBAR";
+$header = "From FUBAR";
 
-$file = 'cons.zip';
-$content = file_get_contents( $file);
-$content = chunk_split(base64_encode($content));
-$uid = md5(uniqid(time()));
-$name = basename($file);
-// header
-$header = "From: WEBL <FUBAR2k19@gmail.com>\r\n";
-$header .= "Reply-To: FUBAR2k19@gmail.com\r\n";
-$header .= "MIME-Version: 1.0\r\n";
-$header .= "Content-Type: multipart/mixed; boundary=\"".$uid."\"\r\n\r\n";
-
-// message & attachment
-$filename= "cons.zip";
-$nmessage = "--".$uid."\r\n";
-$nmessage .= "Content-type:text/plain; charset=iso-8859-1\r\n";
-$nmessage .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
-$nmessage .= "\r\n\r\n";
-$nmessage .= "--".$uid."\r\n";
-$nmessage .= "Content-Type: application/octet-stream; name=\"".$filename."\"\r\n";
-$nmessage .= "Content-Transfer-Encoding: base64\r\n";
-$nmessage .= "Content-Disposition: attachment; filename=\"".$filename."\"\r\n\r\n";
-$nmessage .= $content."\r\n\r\n";
-$nmessage .= "--".$uid."--";
-$subject="Here is your webpage";
-if (mail($mailto, $subject, $nmessage, $header)) {
+if (mail($mailto, $subject, $message, $header)) {
   // Or do something here
-    header('Location: download.php');
+    header('Location: download.php?url='.$url);
 } else {
   echo "fail";
 }

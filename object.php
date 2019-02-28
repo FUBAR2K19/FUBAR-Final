@@ -10,7 +10,7 @@ $data = $user->data();
 //constructive
  if(isset($_GET['cons']))
   {
-  header("Location: Template/constructive/download.php?mail=".$mail);
+  header("Location: Template/constructive/zipfile.php?mail=".$mail);
 }
 
 //architect
@@ -21,8 +21,7 @@ header("Location: Template/dark/SendMail.php?mail=".$mail);
 
 if(isset($_GET['arch']))
 {
-  $url = $_GET['arch'];
-header("Location: Template/architect/SendMail.php?mail=".$mail."&url=".$url);
+header("Location: Template/architect/zipfile.php?mail=".$mail);
 }
 
 if(isset($_GET['cv']))
