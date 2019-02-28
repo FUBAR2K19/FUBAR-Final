@@ -37,7 +37,7 @@ foreach ($files as $name => $file)
 $zip->close();
 //header('Location: ../../object.php?arch');
 
-}
+
 if(isset($_GET['mail']))
 {
 $mail = $_GET['mail'];
