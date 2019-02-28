@@ -41,7 +41,7 @@ $zip->close();
 }
 if(isset($_GET['mail']))
 {
-$mail = $_GET['mail']
+$mail = $_GET['mail'];
 
 //$date = new DateTime('2000-01-01');
 $build = 'builds/'.$mail.''.rand();
