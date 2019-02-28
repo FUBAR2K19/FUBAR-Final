@@ -36,8 +36,28 @@ foreach ($files as $name => $file)
 // Zip archive will be created only after closing object
 $zip->close();
 //header('Location: ../../object.php?arch');
-header('Location: ../../object.php?cv');
 
+if(isset($_GET['mail']))
+{
+$mail = $_GET['mail'];
+
+//$date = new DateTime('2000-01-01');
+$build = 'builds/'.$mail.''.rand();
+$result = $build;
+if (!is_dir($result)) {
+    mkdir($result);
+    $result = '"'.$result.'"';
+    echo 'xcopy /E/S "../cv1" '.$result;
+    echo exec('xcopy /E/S "../cv1" '.$result);
+    $deploy_url = "https://fubar2k19.github.io/FUBAR-Final/Template/cv/".$build."/home.html";
+  //  system("cmd /c C:[ C:\xampp\htdocs\builder\site_deploy_watcher.bat]");
+
+}
+header('Location:SendMail.php?mail='$mail.'&url='.$deploy_url);
+}
+else {
+  echo "error";
+}
 //$zip = new ZipArchive();
 //$zipp = $zip->open($filename);
 /*$id = $_SESSION['userID'];
