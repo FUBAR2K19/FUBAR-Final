@@ -36,9 +36,15 @@ foreach ($files as $name => $file)
 // Zip archive will be created only after closing object
 $zip->close();
 
-if(isset($_GET['mail']))
-{
-$mail = $_GET['mail']
+
+if (!$_GET['mail']) {
+  // code...
+  echo "error";
+}
+else {
+
+
+$mail = $_GET['mail'];
 
 //$date = new DateTime('2000-01-01');
 $build = 'builds/'.$mail.''.rand();
@@ -46,16 +52,14 @@ $result = $build;
 if (!is_dir($result)) {
     mkdir($result);
     $result = '"'.$result.'"';
-    echo 'xcopy /E/S "../architect1" '.$result;
-    echo exec('xcopy /E/S "../architect1" '.$result);
-    $deploy_url = "https://fubar2k19.github.io/FUBAR-Final/Template/architect/".$build."/home.html";
+    echo 'xcopy /E/S "../constructive1" '.$result;
+    echo exec('xcopy /E/S "../constructive1" '.$result);
+    $deploy_url = "https://fubar2k19.github.io/FUBAR-Final/Template/constructive/".$build."/home.html";
 
 }
-header('Location:SendMail.php?mail='$mail.'&url='.$deploy_url);
+header('Location: SendMail.php?mail='.$mail.'&url='.$deploy_url);
 }
-else {
-  echo "error";
-}
+
 //header('Location: ../../object.php?cons');
 //header('Location: download.php');
 

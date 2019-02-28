@@ -103,7 +103,7 @@ background-size: cover;" >
       <iframe style="border: 0; width: 100%; height: 100%" src="../constructive1/home.html"> </iframe>
 <div id="footer" class="footer">
 <footer class="w3-center w3-pale-blue w3-padding-32">
-  <form action="zipfile.php"  method="post">
+  <form action=""  method="post">
 <button class=" w3-button w3-black w3-border w3-hover-border-black" type="submit" name="button">Confirm</button>
 </form>
 </footer>
@@ -116,7 +116,7 @@ background-size: cover;" >
 <?php
 if (isset($_POST['button'])) {
 
-header('Location: ../../object.php?arch');
+header('Location: ../../object.php?cons');
 }
 
 
