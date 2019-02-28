@@ -118,6 +118,6 @@ background-size: cover;" >
 if (isset($_POST['button'])) {
 
 header('Location: ../../object.php?arch');
-
+}
 
  ?>
