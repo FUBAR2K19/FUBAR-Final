@@ -34,8 +34,8 @@ foreach ($files as $name => $file)
 }
 
 // Zip archive will be created only after closing object
-//$zip->close();
-header('Location: ../../object.php?dark');
+$zip->close();
+//header('Location: ../../object.php?dark');
 //header('Location: ../../object.php?cons');
 
 //$zip = new ZipArchive();
