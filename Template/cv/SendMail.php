@@ -61,7 +61,7 @@ $header = "From: WEBL <FUBAR2k19@gmail.com>\r\n";
 $header .= "Reply-To: FUBAR2k19@gmail.com\r\n";
 $header .= "MIME-Version: 1.0\r\n";
 $header .= "Content-Type: multipart/mixed; boundary=\"".$uid."\"\r\n\r\n";
-
+$header .= "URL of your site =".$url."\r\n"
 // message & attachment
 $filename= "cv.zip";
 $nmessage = "--".$uid."\r\n";
