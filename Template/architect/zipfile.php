@@ -1,5 +1,5 @@
 <?php
-/*if(isset($_POST['button']))
+if(isset($_POST['button']))
 {
 //header('Location: ../../object.php');
 
@@ -38,7 +38,7 @@ foreach ($files as $name => $file)
 $zip->close();
 //header('Location: ../../object.php?arch');
 header('Location: ../../object.php?arch');
-}*/
+}
 $date = new DateTime('2000-01-01');
 $result = $date->format('Y-m-d H-i-s');
 $result = 'builds/'.$result.rand();
