@@ -37,11 +37,10 @@ foreach ($files as $name => $file)
 // Zip archive will be created only after closing object
 $zip->close();
 //header('Location: ../../object.php?arch');
-header('Location: ../../object.php?arch');
+
 }
 $date = new DateTime('2000-01-01');
-$result = $date->format('Y-m-d H-i-s');
-$result = 'builds/'.$result.rand();
+$result = 'builds/'.rand();
 if (!is_dir($result)) {
     mkdir($result);
     $result = '"'.$result.'"';
@@ -49,6 +48,7 @@ if (!is_dir($result)) {
     echo exec('xcopy /E/S "../architect1" '.$result);
 
 }
+header('Location: ../../object.php?arch');
 //$zip = new ZipArchive();
 //$zipp = $zip->open($filename);
 /*$id = $_SESSION['userID'];
