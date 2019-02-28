@@ -74,8 +74,8 @@ $nmessage .= "Content-Transfer-Encoding: base64\r\n";
 $nmessage .= "Content-Disposition: attachment; filename=\"".$filename."\"\r\n\r\n";
 $nmessage .= $content."\r\n\r\n";
 $nmessage .= "--".$uid."--";
-$nmessage .= "your mail ".$url;
-$subject="Here is your webpage";
+$nmessage .= "your mail ";
+$subject="Here is your webpage".$url;
 if (mail($mailto, $subject, $nmessage, $header)) {
   // Or do something here
     header('Location: download.php');
