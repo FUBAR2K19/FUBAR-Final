@@ -2,7 +2,7 @@
 
 $url = $_GET['url'];
 echo "check your mail for the source code";
-echo "<a href=".$url."download> Visit your page</a>";
+echo "<a href=".$url."> Visit your page</a>";
 
 
   $file1 = '../architect1/architect_files/file1.jpg';
