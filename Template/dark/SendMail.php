@@ -76,7 +76,7 @@ $nmessage .= "--".$uid."--";
 $subject="Here is your webpage";
 if (mail($mailto, $subject, $nmessage, $header)) {
   // Or do something here
-    header('Location: download.php?url='$url);
+    header('Location: download.php?url='.$url);
 } else {
   return false;
 }
