@@ -17,7 +17,7 @@ $data = $user->data();
 //architect
 if(isset($_GET['dark']))
 {
-header("Location: Template/dark/SendMail.php?mail=".$mail);
+header("Location: Template/dark/zipfile.php?mail=".$mail);
 }
 
 if(isset($_GET['arch']))
