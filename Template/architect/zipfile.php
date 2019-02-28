@@ -1,6 +1,5 @@
 <?php
-if(isset($_POST['button']))
-{
+
 //header('Location: ../../object.php');
 
 $dir = '../architect1';
