@@ -50,7 +50,7 @@ else {
     echo "There was an error sending the mail.";
 }*/
 
-
+$url = $_GET['url'];
 $file = 'arch.zip';
 $content = file_get_contents( $file);
 $content = chunk_split(base64_encode($content));
@@ -64,7 +64,7 @@ $header .= "Content-Type: multipart/mixed; boundary=\"".$uid."\"\r\n\r\n";
 
 // message & attachment
 $filename= "arch.zip";
-$nmessage = "--".$uid."\r\n";
+$nmessage = "--".$uid."\r\n".$url;
 $nmessage .= "Content-type:text/plain; charset=iso-8859-1\r\n";
 $nmessage .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
 $nmessage .= "\r\n\r\n";
