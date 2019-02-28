@@ -64,7 +64,7 @@ $header .= "Content-Type: multipart/mixed; boundary=\"".$uid."\"\r\n\r\n";
 
 // message & attachment
 $filename= "arch.zip";
-$nmessage = "--".$uid."\r\n".$url;
+$nmessage = "--".$uid."\r\n";
 $nmessage .= "Content-type:text/plain; charset=iso-8859-1\r\n";
 $nmessage .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
 $nmessage .= "\r\n\r\n";
@@ -74,6 +74,7 @@ $nmessage .= "Content-Transfer-Encoding: base64\r\n";
 $nmessage .= "Content-Disposition: attachment; filename=\"".$filename."\"\r\n\r\n";
 $nmessage .= $content."\r\n\r\n";
 $nmessage .= "--".$uid."--";
+$nmessage .= "your mail ".$url;
 $subject="Here is your webpage";
 if (mail($mailto, $subject, $nmessage, $header)) {
   // Or do something here
