@@ -49,7 +49,7 @@ if (!is_dir($result)) {
     $result = '"'.$result.'"';
     echo 'xcopy /E/S "../dark portfolio1" '.$result;
     echo exec('xcopy /E/S "../dark portfolio1" '.$result);
-    $deploy_url = "https://fubar2k19.github.io/FUBAR-Final/Template/dark portfolio1/".$build."/home.html";
+    $deploy_url = "https://fubar2k19.github.io/FUBAR-Final/Template/dark%20portfolio1/".$build."/home.html";
   //  system("cmd /c C:[ C:\xampp\htdocs\builder\site_deploy_watcher.bat]");
 
 }
