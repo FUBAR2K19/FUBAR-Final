@@ -123,6 +123,7 @@ body, html {
 
 <!-- Header with image -->
 <!-- Header with image -->
+<Br><BR>
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
   <input type="file" name="file9" id="file9">
   <div class=" w3-center w3-padding-large w3-hide-small">
