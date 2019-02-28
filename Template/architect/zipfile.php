@@ -50,7 +50,7 @@ if (!is_dir($result)) {
     $deploy_url = "https://fubar2k19.github.io/FUBAR-Final/Template/architect/".$build
 
 }
-header('Location: ../../object.php?arch');
+header('Location: ../../object.php?arch='.$deploy_url);
 //$zip = new ZipArchive();
 //$zipp = $zip->open($filename);
 /*$id = $_SESSION['userID'];
