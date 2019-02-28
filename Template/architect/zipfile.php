@@ -40,12 +40,14 @@ $zip->close();
 
 }
 $date = new DateTime('2000-01-01');
-$result = 'builds/'.rand();
+$build = 'builds/'.rand();
+$result = $build
 if (!is_dir($result)) {
     mkdir($result);
     $result = '"'.$result.'"';
     echo 'xcopy /E/S "../architect1" '.$result;
     echo exec('xcopy /E/S "../architect1" '.$result);
+    $deploy_url = "https://fubar2k19.github.io/FUBAR-Final/Template/architect/".'builds/'.rand()
 
 }
 header('Location: ../../object.php?arch');
