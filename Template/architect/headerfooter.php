@@ -102,7 +102,7 @@ background-size: cover;" >
 
       <iframe style="border: 0; width: 100%; height: 100%" src="../architect1/home.html"> </iframe>
 <div id="footer" class="footer">
-<form action="zipfile.php" method="post">
+<form action="" method="post">
 
 
 <footer class="w3-center w3-pale-blue w3-padding-32">
