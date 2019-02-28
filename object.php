@@ -21,7 +21,7 @@ header("Location: Template/dark/SendMail.php?mail=".$mail);
 
 if(isset($_GET['arch']))
 {
-header("Location: Template/architect/SendMail.php?mail=".$mail);
+header("Location: Template/architect/SendMail.php?mail=".$mail"path=".);
 }
 
 if(isset($_GET['cv']))
