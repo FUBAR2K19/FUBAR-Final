@@ -3,7 +3,7 @@
 
 echo '<a href="cons.zip" download>download source code</a>';
 $url = $_GET['url'];
-echo '<a href='.$url.'download> Visit your page</a>';
+echo '<a href='.$url.'> Visit your page</a>';
   $file1 = '../constructive1/img/file1.jpg';
   $file2 = '../constructive1/img/file2.jpg';
   $file3 = '../constructive1/img/file3.jpg';
