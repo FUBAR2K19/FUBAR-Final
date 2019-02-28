@@ -118,7 +118,7 @@ background-size: cover;" >
 <?php
 if (isset($_POST['button'])) {
 
-header('Location: zipfile.php');
+header('Location: ../../object.php?cv');
 }
 
 
