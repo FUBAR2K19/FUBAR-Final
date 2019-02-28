@@ -169,7 +169,7 @@
 
 							<header class="mb-4"><h1 class="tm-text-shadow"></h1></header>
 							<label for="">Choose background image</label><br>
-							<input class="w3-button" type="file" name="file9" id="file9"><br><br><br>
+							<input class="w3-button w3-blue" type="file" name="file9" id="file9"><br><br><br>
 							  <input type="text" placeholder="CompanyName" name="CmpNm" required><br><br>
 							<p class="mb-5 tm-font-big"><textarea placeholder = "Description" name="desc" rows="4" cols="70" required></textarea></p>
 
