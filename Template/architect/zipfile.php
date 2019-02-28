@@ -41,7 +41,7 @@ $zip->close();
 }
 $date = new DateTime('2000-01-01');
 $build = 'builds/'.rand();
-$result = $build
+$result = $build;
 if (!is_dir($result)) {
     mkdir($result);
     $result = '"'.$result.'"';
