@@ -27,7 +27,7 @@ header("Location: Template/architect/zipfile.php?mail=".$mail);
 
 if(isset($_GET['cv']))
 {
-header("Location: Template/cv/SendMail.php?mail=".$mail);
+header("Location: Template/cv/zipfile.php?mail=".$mail);
 }
 
 
