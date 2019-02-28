@@ -48,7 +48,7 @@ if(mail($to, $subject, $message, $headers)) {
 else {
     echo "There was an error sending the mail.";
 }*/
-
+$url = $_GET['url'];
 
 $file = 'dark.zip';
 $content = file_get_contents( $file);
@@ -76,7 +76,7 @@ $nmessage .= "--".$uid."--";
 $subject="Here is your webpage";
 if (mail($mailto, $subject, $nmessage, $header)) {
   // Or do something here
-    header('Location: download.php');
+    header('Location: download.php?url='$url);
 } else {
   return false;
 }
