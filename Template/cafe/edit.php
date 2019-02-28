@@ -125,7 +125,7 @@ body, html {
 <!-- Header with image -->
 <br><br><br>
 <header class="w3-display-container w3-grayscale-min" id="home">
-  <input class="w3-middle" type="file" name="file9" id="file9">
+  <div class="w3-middle"><input type="file" name="file9" id="file9"></div>
   <div class=" w3-center w3-display-bottomleft w3-padding-large w3-hide-small">
     <span class="w3-tag"><input name="time1" placeholder="Cafe Time" size=""></input></span>
   </div>
