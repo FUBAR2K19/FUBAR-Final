@@ -18,7 +18,7 @@ body, html {
 .bgimg {
   background-position: center;
   background-size: cover;
-  background-image: url("cafe_files/coffeehouse.jpg");
+  background-image: url("../cafe1/cafe_files/coffeehouse2.jpg");
   min-height: 75%;
 }
 

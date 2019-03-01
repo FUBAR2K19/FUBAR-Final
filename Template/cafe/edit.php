@@ -59,7 +59,7 @@ body, html {
               <div class="w3-container">
                   <br>
                 <label class="w3-padding"><b>Website Title</b></label>
-                <input class="w3-input w3-border w3-margin-left" style="width: 50%; " type="text" placeholder="Enter Title" name="title" required>
+                <input class="w3-input w3-border w3-margin-left" style="width: 50%; " type="text" placeholder="Enter Title" name="title" required autocomplete="off" >
 
               <div class="w3-dropdown-hover w3-margin">
                   <!--<button class="w3-button w3-light-blue">Choose Font</button>
@@ -131,10 +131,10 @@ body, html {
     <span class="w3-tag"><input name="time1" placeholder="Cafe Time" size=""></input></span>
   </div>
   <div class=" w3-center">
-    <span class="w3-text-white" style="font-size:50px"><input name="name1" placeholder="Cafe Name" size="8"></input></span>
+    <span class="w3-text-white" style="font-size:50px"><input name="name1" placeholder="Cafe Name" size="8" autocomplete="off" ></input></span>
   </div>
   <div class="w3-display-bottomright w3-center w3-padding-large">
-    <span class="w3-text-white"><input name="add1" placeholder="Cafe Address" size=""></input></span>
+    <span class="w3-text-white"><input name="add1" placeholder="Cafe Address" size=""  autocomplete="off"  ></input></span>
   </div>
 </header>
 

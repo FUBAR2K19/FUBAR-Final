@@ -230,7 +230,7 @@ $cp1=new CopyPaste;
 $cp1->Exchange1($str1,$str11);
 unset($cp1,$str1,$str11);
 
-$str1='ript';
+$str1='ripx';
 $str11=$_POST['detail10'];
 $cp1=new CopyPaste;
 
@@ -264,6 +264,9 @@ $cp1=new CopyPaste;
 
 $cp1->Exchange1($str1,$str11);
 unset($cp1,$str1,$str11);
+
+
+
 
 if(isset($_POST['font']))
 {
@@ -318,6 +321,39 @@ switch ($font) {
     break;
 }
 }
+
+if(isset($_FILES['file1']))
+{
+  echo "done";
+$errors= array();
+$file_name = $_FILES['file1']['name'];
+$file_size =$_FILES['file1']['size'];
+$file_tmp =$_FILES['file1']['tmp_name'];
+$file_type=$_FILES['file1']['type'];
+$file_ext=strtolower(end(explode('.', $_FILES['file1']['name'])));
+
+$expensions= array("jpeg","jpg","png");
+
+if(in_array($file_ext,$expensions)=== false){
+$errors[]="extension not allowed, please choose a JPEG or PNG file.";
+}
+
+if($file_size > 5097152){
+$errors[]='File size must be excately 2 MB';
+}
+
+if(empty($errors)==true){
+
+  echo "string";
+move_uploaded_file($file_tmp,"../cafe1/cafe_files/".$file_name);
+rename('../cafe1/cafe_files/'.$file_name,'../cafe1/cafe_files/file1.jpg');
+echo "Success";
+}else{
+print_r($errors);
+}
+}
+
+
 header('Location: headerfooter.php');
 }
 ?>

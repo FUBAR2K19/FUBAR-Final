@@ -54,7 +54,7 @@
               <div class="w3-container">
                   <br>
                 <label class="w3-padding"><b>Website Title</b></label>
-                <input class="w3-input w3-border w3-margin-left" style="width: 50%; " type="text" placeholder="Enter Title" name="title" required>
+                <input class="w3-input w3-border w3-margin-left" style="width: 50%; " type="text" placeholder="Enter Title" name="title" required autocomplete="off" >
 
               <div class="w3-dropdown-hover w3-margin">
                   <!--<button class="w3-button w3-light-blue">Choose Font</button>
@@ -102,7 +102,7 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <p href="#home" class="w3-bar-item w3-button"><input name="Cpname" placeholder="Company Name" size=""></input></p>
+    <p href="#home" class="w3-bar-item w3-button"><input name="Cpname" placeholder="Company Name" size="" autocomplete="off" ></input></p>
 
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
@@ -118,7 +118,7 @@
   <img class="w3-image" src="./architect_files/architect.jpg" alt="Architecture" width="1500" height="800">
 
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white w3-padding w3-black"><input name="Cpname" placeholder="Company Name" size="12"></input></h1>
+    <h1 class="w3-xxlarge w3-text-white w3-padding w3-black"><input name="Cpname" placeholder="Company Name" size="12" autocomplete="off" ></input></h1>
     <label for="">choose background image</label>
       <p><input type="file" id="file14" name="file14" size="30" onchange="doTest()"></p>
        <img id="uploadPreview" src="" width="100%" style="display:none" />
@@ -137,28 +137,28 @@
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-center w3-black w3-padding"><input name="img1" placeholder="Image" size=""></input></div>
+        <div class="w3-display-center w3-black w3-padding"><input name="img1" placeholder="Image" size="" autocomplete="off" ></input></div>
           <p><input type="file" id="file1" name="file1" size="30" onchange="doTest()"></p>
            <img id="uploadPreview" src="" width="100%" style="display:none" />
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-cente w3-black w3-padding"><input name="img2" placeholder="Image" size=""></input></div>
+        <div class="w3-display-cente w3-black w3-padding"><input name="img2" placeholder="Image" size="" autocomplete="off" ></input></div>
         <p><input type="file" id="file2" name="file2" size="30" onchange="doTest()"></p>
            <img id="uploadPreview" src="" width="100%" style="display:none" />
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-cente w3-black w3-padding"><input name="img3" placeholder="Image" size=""></input></div>
+        <div class="w3-display-cente w3-black w3-padding"><input name="img3" placeholder="Image" size="" autocomplete="off" ></input></div>
         <p><input type="file" id="file3" name="file3" size="30" onchange="doTest()"></p>
            <img id="uploadPreview" src="" width="100%" style="display:none" />
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-cente w3-black w3-padding"><input name="img4" placeholder="Image" size=""></input></div>
+        <div class="w3-display-cente w3-black w3-padding"><input name="img4" placeholder="Image" size="" autocomplete="off" ></input></div>
         <p><input type="file" id="file4" name="file4" size="30" onchange="doTest()"></p>
            <img id="uploadPreview" src="" width="100%" style="display:none" />
       </div>
@@ -168,28 +168,28 @@
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-cente w3-black w3-padding"><input name="img5" placeholder="Image" size=""></input></div>
+        <div class="w3-display-cente w3-black w3-padding"><input name="img5" placeholder="Image" size="" autocomplete="off" ></input></div>
         <p><input type="file" id="file5" name="file5" size="30" onchange="doTest()"></p>
            <img id="uploadPreview" src="" width="100%" style="display:none" />
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-cente w3-black w3-padding"><input name="img6" placeholder="Image" size=""></input></div>
+        <div class="w3-display-cente w3-black w3-padding"><input name="img6" placeholder="Image" size="" autocomplete="off" ></input></div>
         <p><input type="file" id="file6" name="file6" size="30" onchange="doTest()"></p>
            <img id="uploadPreview" src="" width="100%" style="display:none" />
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-cente w3-black w3-padding"><input name="img7" placeholder="Image" size=""></input></div>
+        <div class="w3-display-cente w3-black w3-padding"><input name="img7" placeholder="Image" size="" autocomplete="off" ></input></div>
         <p><input type="file" id="file7" name="file7" size="30" onchange="doTest()"></p>
            <img id="uploadPreview" src="" width="100%" style="display:none" />
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-cente w3-black w3-padding"><input name="img8" placeholder="Image" size=""></input></div>
+        <div class="w3-display-cente w3-black w3-padding"><input name="img8" placeholder="Image" size="" autocomplete="off" ></input></div>
         <p><input type="file" id="file8" name="file8" size="30" onchange="doTest()"></p>
            <img id="uploadPreview" src="" width="100%" style="display:none" />
       </div>
@@ -208,32 +208,32 @@
     <div class="w3-col  w3-center l3 m6 w3-margin-bottom">
       <p><input type="file" id="file9" name="file9" size="30" onchange="doTest()"></p>
            <img id="uploadPreview" src="" width="100%" style="display:none" />
-      <h3><input name="architect1" placeholder="architect1" size="15"></input></h3>
-      <p class="w3-opacity"><input name="arpost1" placeholder="post1" size="10"></input></p>
+      <h3><input name="architect1" placeholder="architect1" size="15" autocomplete="off" ></input></h3>
+      <p class="w3-opacity"><input name="arpost1" placeholder="post1" size="10" autocomplete="off" ></input></p>
       <p><textarea name="about2" placeholder="Short Description" rows="3" cols="25" ></textarea></p>
       <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
     </div>
     <div class="w3-col w3-center l3 m6 w3-margin-bottom">
       <p><input type="file" id="file10" name="file10" size="30" onchange="doTest()"></p>
            <img id="uploadPreview" src="" width="100%" style="display:none" />
-      <h3><input name="architect2" placeholder="architect2" size="15"></input></h3>
-      <p class="w3-opacity"><input name="arpost2" placeholder="post2" size="10"></input></p>
+      <h3><input name="architect2" placeholder="architect2" size="15" autocomplete="off" ></input></h3>
+      <p class="w3-opacity"><input name="arpost2" placeholder="post2" size="10" autocomplete="off" ></input></p>
       <p><textarea name="about3" placeholder="Short Description" rows="3" cols="25" ></textarea></p>
       <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
     </div>
     <div class="w3-col w3-center l3 m6 w3-margin-bottom">
       <p><input type="file" id="file11" name="file11" size="30" onchange="doTest()"></p>
            <img id="uploadPreview" src="" width="100%" style="display:none" />
-      <h3><input name="architect3" placeholder="architect3" size="15"></input></h3>
-      <p class="w3-opacity"><input name="arpost3" placeholder="post3" size="10"></input></p>
+      <h3><input name="architect3" placeholder="architect3" size="15" autocomplete="off" ></input></h3>
+      <p class="w3-opacity"><input name="arpost3" placeholder="post3" size="10" autocomplete="off" ></input></p>
       <p><textarea name="about4" placeholder="Short Description" rows="3" cols="25" ></textarea></p>
       <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
     </div>
     <div class="w3-col w3-center l3 m6 w3-margin-bottom">
       <p><input type="file" id="file12" name="file12" size="30" onchange="doTest()"></p>
            <img id="uploadPreview" src="" width="100%" style="display:none" />
-      <h3><input name="architect4" placeholder="architect4" size="15"></input></h3>
-      <p class="w3-opacity"><input name="arpost4" placeholder="post4" size="10"></input></p>
+      <h3><input name="architect4" placeholder="architect4" size="15" autocomplete="off" ></input></h3>
+      <p class="w3-opacity"><input name="arpost4" placeholder="post4" size="10" autocomplete="off" ></input></p>
       <p><textarea name="about5" placeholder="Short Description" rows="3" cols="25" ></textarea></p>
       <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
     </div>
@@ -243,8 +243,8 @@
   <div class="w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
     <p>Lets get in touch and talk about your next project.</p>
-<h3>Email Id:&nbsp&nbsp&nbsp&nbsp<input name="email1" placeholder="example@xyz.com" size="20"></input></h3>
-    <h3>Tel. No.:&nbsp&nbsp&nbsp&nbsp&nbsp<input name="telno1" placeholder="+0123456789" size="10"></input></h3>
+<h3>Email Id:&nbsp&nbsp&nbsp&nbsp<input name="email1" placeholder="example@xyz.com" size="20" autocomplete="off" ></input></h3>
+    <h3>Tel. No.:&nbsp&nbsp&nbsp&nbsp&nbsp<input name="telno1" placeholder="+0123456789" size="10" autocomplete="off" ></input></h3>
   </div>
 
     <hr>
