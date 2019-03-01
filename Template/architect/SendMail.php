@@ -58,7 +58,7 @@ $uid = md5(uniqid(time()));
 $name = basename($file);
 // header
 $header = "From: WEBL <FUBAR2k19@gmail.com>\r\n";
-$header .= "Reply-To: FUBAR2k19@gmail.com\r\n";
+$header .="Url of your site:".$url."\r\n";
 $header .="Url of your site:".$url."\r\n";
 $header .= "MIME-Version: 1.0\r\n";
 $header .= "Content-Type: multipart/mixed; boundary=\"".$uid."\"\r\n\r\n";
