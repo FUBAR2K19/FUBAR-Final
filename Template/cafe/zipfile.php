@@ -36,7 +36,52 @@ foreach ($files as $name => $file)
 
 // Zip archive will be created only after closing object
 $zip->close();
-header('Location: ../../object.php?cons');
+
+if(isset($_GET['mail']))
+{
+$mail = $_GET['mail'];
+
+//$date = new DateTime('2000-01-01');
+$build = 'builds/'.$mail.''.rand();
+$result = $build;
+/*if (!is_dir($result)) {
+    mkdir($result);
+    $result = '"'.$result.'"';
+    echo 'xcopy /E/S "../architect1" '.$result;
+    echo exec('xcopy /E/S "../architect1" '.$result);
+    $deploy_url = "https://fubar2k19.github.io/FUBAR-Final/Template/architect/".$build."/home.html";
+  //  system("cmd /c C:[ C:\xampp\htdocs\builder\site_deploy_watcher.bat]");*/
+
+  function recurse_copy($src, $dst) {
+
+    $dir = opendir($src);
+    $result = ($dir === false ? false : true);
+
+    if ($result !== false) {
+      $result = @mkdir($dst);
+
+      if ($result === true) {
+        while(false !== ( $file = readdir($dir)) ) {
+          if (( $file != '.' ) && ( $file != '..' ) && $result) {
+            if ( is_dir($src . '/' . $file) ) {
+              $result = recurse_copy($src . '/' . $file,$dst . '/' . $file);
+            }     else {
+              $result = copy($src . '/' . $file,$dst . '/' . $file);
+            }
+          }
+        }
+        closedir($dir);
+      }
+    }
+
+    return $result;
+  }
+  $src='../cafe1';
+
+recurse_copy($src, $result);
+
+
+header('Location: ../../object.php?cafe');
 }
 //$zip = new ZipArchive();
 //$zipp = $zip->open($filename);
