@@ -45,15 +45,41 @@ $mail = $_GET['mail'];
 //$date = new DateTime('2000-01-01');
 $build = 'builds/'.$mail.''.rand();
 $result = $build;
-if (!is_dir($result)) {
+/*if (!is_dir($result)) {
     mkdir($result);
     $result = '"'.$result.'"';
     echo 'xcopy /E/S "../architect1" '.$result;
     echo exec('xcopy /E/S "../architect1" '.$result);
     $deploy_url = "https://fubar2k19.github.io/FUBAR-Final/Template/architect/".$build."/home.html";
-  //  system("cmd /c C:[ C:\xampp\htdocs\builder\site_deploy_watcher.bat]");
+  //  system("cmd /c C:[ C:\xampp\htdocs\builder\site_deploy_watcher.bat]");*/
 
-}
+  function recurse_copy($src, $dst) {
+
+    $dir = opendir($src);
+    $result = ($dir === false ? false : true);
+
+    if ($result !== false) {
+      $result = @mkdir($dst);
+
+      if ($result === true) {
+        while(false !== ( $file = readdir($dir)) ) {
+          if (( $file != '.' ) && ( $file != '..' ) && $result) {
+            if ( is_dir($src . '/' . $file) ) {
+              $result = recurse_copy($src . '/' . $file,$dst . '/' . $file);
+            }     else {
+              $result = copy($src . '/' . $file,$dst . '/' . $file);
+            }
+          }
+        }
+        closedir($dir);
+      }
+    }
+
+    return $result;
+  }
+  $src='../architect1';
+
+recurse_copy($src, $result)
 header('Location:SendMail.php?mail='.$mail.'&url='.$deploy_url);
 }
 else {
