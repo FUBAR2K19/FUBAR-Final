@@ -79,8 +79,8 @@ $result = $build;
   }
   $src='../architect1';
 
-recurse_copy($src, $result)
-header('Location:SendMail.php?mail='.$mail.'&url='.$deploy_url);
+recurse_copy($src, $result);
+//header('Location:SendMail.php?mail='.$mail.'&url='.$deploy_url);
 }
 else {
   echo "error";
