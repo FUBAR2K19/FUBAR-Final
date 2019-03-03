@@ -49,13 +49,33 @@ $mail = $_GET['mail'];
 //$date = new DateTime('2000-01-01');
 $build = 'builds/'.$mail.''.rand();
 $result = $build;
-if (!is_dir($result)) {
-    mkdir($result);
-    $result = '"'.$result.'"';
-    echo 'xcopy /E/S "../constructive1" '.$result;
-    echo exec('xcopy /E/S "../constructive1" '.$result);
-    $deploy_url = "https://fubar2k19.github.io/FUBAR-Final/Template/constructive/".$build."/home.html";
+function recurse_copy($src, $dst) {
 
+  $dir = opendir($src);
+  $result = ($dir === false ? false : true);
+
+  if ($result !== false) {
+    $result = @mkdir($dst);
+
+    if ($result === true) {
+      while(false !== ( $file = readdir($dir)) ) {
+        if (( $file != '.' ) && ( $file != '..' ) && $result) {
+          if ( is_dir($src . '/' . $file) ) {
+            $result = recurse_copy($src . '/' . $file,$dst . '/' . $file);
+          }     else {
+            $result = copy($src . '/' . $file,$dst . '/' . $file);
+          }
+        }
+      }
+      closedir($dir);
+    }
+  }
+
+  return $result;
+}
+$src='../cafe1';
+
+recurse_copy($src, $result);
   //  pclose(popen("start /B site_deploy_watcher.bat", "r"));
 //  exec('c:\WINDOWS\system32\cmd.exe /c START C:\xampp\htdocs\builder\Template\constructive\site_deploy_watcher.bat');
 
