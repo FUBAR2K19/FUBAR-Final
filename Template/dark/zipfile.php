@@ -2,7 +2,7 @@
 
 //header('Location: ../../object.php');
 
-$dir = '../dark portfolio1';
+$dir = '../dark1';
 $zip_file = 'dark.zip';
 
 // Get real path for our folder
@@ -47,8 +47,8 @@ $result = $build;
 if (!is_dir($result)) {
     mkdir($result);
     $result = '"'.$result.'"';
-    echo 'xcopy /E/S "../dark portfolio1" '.$result;
-    echo exec('xcopy /E/S "../dark portfolio1" '.$result);
+    echo 'xcopy /E/S "../dark1" '.$result;
+    echo exec('xcopy /E/S "../dark1" '.$result);
     $deploy_url = "https://fubar2k19.github.io/FUBAR-Final/Template/darkportfolio1/".$build."/home.html";
   //  system("cmd /c C:[ C:\xampp\htdocs\builder\site_deploy_watcher.bat]");
 

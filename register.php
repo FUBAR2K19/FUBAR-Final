@@ -70,13 +70,13 @@ if(Input::exists()) {
 </head>
 
 <body>
-    <div class="w3-modal-content  w3-animate-zoom" style="">
+    <div class="w3-modal-content w3-container w3-animate-zoom" style="">
 
       <div class="w3-center"><br>
         <img src="images/imageuser.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
       </div>
 
-      <form class="w3-container" action="" method="post">
+      <form class="w3-container" action="" method="post" autocomplete="off">
         <div class="w3-section">
           <div class="field">
         <label for="username">Username</label>
@@ -104,6 +104,10 @@ if(Input::exists()) {
 
         </div>
       </form>
+      <div class="w3-container w3-border-top w3-padding-16 ">
+        <span class="w3-left w3-padding w3-hide-small">Already a user? <a href="register.php">Log In</a></span>
+
+      </div>
 
     </div>
 

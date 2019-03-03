@@ -62,7 +62,7 @@ http://www.tooplate.com/view/2099-scenic
           <link href="../style/font.css" rel="stylesheet">
           </head>
       <body class="w3-black" onload="document.getElementById('apf1').style.display='block'">
-      <form class="" action="scenic.inc.php" method="post" enctype="multipart/form-data">
+      <form class="" action="scenic.inc.php" method="post" enctype="multipart/form-data" autocomplete="off">
       <div id="apf1"  class="w3-modal"  >
          <div onclick="apf1.style.display='none'" class="">
         <!--  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span> -->

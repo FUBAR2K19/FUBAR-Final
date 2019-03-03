@@ -56,7 +56,7 @@ if(isset($_GET['msg']))
         <img src="images/imageuser.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
       </div>
 
-      <form class="w3-container" action="" method="post">
+      <form class="w3-container" action="" method="post" autocomplete="off">
         <div class="w3-section">
           <label><b>Username</b></label>
           <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="username" required>
@@ -70,8 +70,8 @@ if(isset($_GET['msg']))
       </form>
 
       <div class="w3-container w3-border-top w3-padding-16 ">
-        <span class="w3-left w3-padding w3-hide-small"> <a href="register.html">Register</a></span>
-        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="register.html">password?</a></span>
+        <span class="w3-left w3-padding w3-hide-small"> <a href="register.php">Register</a></span>
+        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="register.php">password?</a></span>
       </div>
 
     </div>

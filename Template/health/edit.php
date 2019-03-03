@@ -29,7 +29,7 @@ http://www.tooplate.com/view/2098-health
 
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
-<form class="" action="health.inc.php" method="post"  enctype="multipart/form-data">
+<form class="" action="health.inc.php" method="post"  enctype="multipart/form-data" autocomplete="off">
 
      <!-- PRE LOADER -->
      <section class="preloader">

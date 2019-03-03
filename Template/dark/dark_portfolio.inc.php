@@ -1,12 +1,12 @@
 <?php
 //header('Location: ../../object.php');
-file_put_contents("../dark portfolio1/home.html", "");
+file_put_contents("../dark1/home.html", "");
 class CopyPaste extends Exchange
 {
    function CoPy()
  {
    $source = 'index.html';
-   $dest = '../dark portfolio1/home.html';
+   $dest = '../dark1/home.html';
    if (!copy($source, $dest)) {
       echo "failed to copy $source...\n";
    }else {
@@ -25,7 +25,7 @@ class Exchange
 
       function Exchange1($str, $postnm)
       {
-         $dest = '../dark portfolio1/home.html';
+         $dest = '../dark1/home.html';
          $oldMessage = $str;
 
         $deletedFormat = $postnm;
@@ -228,8 +228,8 @@ $errors[]='File size must be excately 2 MB';
 }
 
 if(empty($errors)==true){
-move_uploaded_file($file_tmp,"../dark portfolio1/dark portfolio_files/".$file_name);
-rename('../dark portfolio1/dark portfolio_files/'.$file_name,'../dark portfolio1/dark portfolio_files/file1.jpg');
+move_uploaded_file($file_tmp,"../dark1/dark portfolio_files/".$file_name);
+rename('../dark1/dark portfolio_files/'.$file_name,'../dark1/dark portfolio_files/file1.jpg');
 echo "Success";
 }else{
 print_r($errors);
@@ -257,8 +257,8 @@ $errors[]='File size must be excately 2 MB';
 }
 
 if(empty($errors)==true){
-move_uploaded_file($file_tmp,"../dark portfolio1/dark portfolio_files/".$file_name);
-rename('../dark portfolio1/dark portfolio_files/'.$file_name,'../dark portfolio1/dark portfolio_files/file2.jpg');
+move_uploaded_file($file_tmp,"../dark1/dark portfolio_files/".$file_name);
+rename('../dark1/dark portfolio_files/'.$file_name,'../dark1/dark portfolio_files/file2.jpg');
 echo "Success";
 }else{
 print_r($errors);
@@ -287,8 +287,8 @@ $errors[]='File size must be excately 2 MB';
 }
 
 if(empty($errors)==true){
-move_uploaded_file($file_tmp,"../dark portfolio1/dark portfolio_files/".$file_name);
-rename('../dark portfolio1/dark portfolio_files/'.$file_name,'../dark portfolio1/dark portfolio_files/file3.jpg');
+move_uploaded_file($file_tmp,"../dark1/dark portfolio_files/".$file_name);
+rename('../dark1/dark portfolio_files/'.$file_name,'../dark1/dark portfolio_files/file3.jpg');
 echo "Success";
 }else{
 print_r($errors);
@@ -317,8 +317,8 @@ $errors[]='File size must be excately 2 MB';
 }
 
 if(empty($errors)==true){
-move_uploaded_file($file_tmp,"../dark portfolio1/dark portfolio_files/".$file_name);
-rename('../dark portfolio1/dark portfolio_files/'.$file_name,'../dark portfolio1/dark portfolio_files/file4.jpg');
+move_uploaded_file($file_tmp,"../dark1/dark portfolio_files/".$file_name);
+rename('../dark1/dark portfolio_files/'.$file_name,'../dark1/dark portfolio_files/file4.jpg');
 echo "Success";
 }else{
 print_r($errors);
@@ -346,8 +346,8 @@ $errors[]='File size must be excately 2 MB';
 }
 
 if(empty($errors)==true){
-move_uploaded_file($file_tmp,"../dark portfolio1/dark portfolio_files/".$file_name);
-rename('../dark portfolio1/dark portfolio_files/'.$file_name,'../dark portfolio1/dark portfolio_files/file5.jpg');
+move_uploaded_file($file_tmp,"../dark1/dark portfolio_files/".$file_name);
+rename('../dark1/dark portfolio_files/'.$file_name,'../dark1/dark portfolio_files/file5.jpg');
 echo "Success";
 }else{
 print_r($errors);
@@ -375,8 +375,8 @@ $errors[]='File size must be excately 2 MB';
 }
 
 if(empty($errors)==true){
-move_uploaded_file($file_tmp,"../dark portfolio1/dark portfolio_files/".$file_name);
-rename('../dark portfolio1/dark portfolio_files/'.$file_name,'../dark portfolio1/dark portfolio_files/file6.jpg');
+move_uploaded_file($file_tmp,"../dark1/dark portfolio_files/".$file_name);
+rename('../dark1/dark portfolio_files/'.$file_name,'../dark1/dark portfolio_files/file6.jpg');
 echo "Success";
 }else{
 print_r($errors);
@@ -405,8 +405,8 @@ $errors[]='File size must be excately 2 MB';
 }
 
 if(empty($errors)==true){
-move_uploaded_file($file_tmp,"../dark portfolio1/dark portfolio_files/".$file_name);
-rename('../dark portfolio1/dark portfolio_files/'.$file_name,'../dark portfolio1/dark portfolio_files/file7.jpg');
+move_uploaded_file($file_tmp,"../dark1/dark portfolio_files/".$file_name);
+rename('../dark1/dark portfolio_files/'.$file_name,'../dark1/dark portfolio_files/file7.jpg');
 echo "Success";
 }else{
 print_r($errors);
@@ -434,8 +434,8 @@ $errors[]='File size must be excately 2 MB';
 }
 
 if(empty($errors)==true){
-move_uploaded_file($file_tmp,"../dark portfolio1/dark portfolio_files/".$file_name);
-rename('../dark portfolio1/dark portfolio_files/'.$file_name,'../dark portfolio1/dark portfolio_files/file8.jpg');
+move_uploaded_file($file_tmp,"../dark1/dark portfolio_files/".$file_name);
+rename('../dark1/dark portfolio_files/'.$file_name,'../dark1/dark portfolio_files/file8.jpg');
 echo "Success";
 }else{
 print_r($errors);
